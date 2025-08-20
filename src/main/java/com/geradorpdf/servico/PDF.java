@@ -24,14 +24,17 @@ public class PDF {
 
             document.add(new Paragraph("Lista gerada automaticamente:"));
 
-            float[] colunas = {200F, 200F};
+            float[] colunas = {150F, 50F, 100F}; // Nome | Idade | Time
             Table table = new Table(colunas);
+
             table.addCell("Nome");
             table.addCell("Idade");
+            table.addCell("Time");
 
             for (Pessoa p : pessoas) {
                 table.addCell(p.getNome());
                 table.addCell(String.valueOf(p.getIdade()));
+                table.addCell(p.getTime());
             }
 
             document.add(table);
