@@ -9,7 +9,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Pessoa> lista = Arrays.asList(
-                new Pessoa("Arthur", 20, "Barcelona"),
+                new Pessoa("Arthur", 20, "Cruzeiro"),
                 new Pessoa("Marcus", 22, "Palmeiras")
         );
 
